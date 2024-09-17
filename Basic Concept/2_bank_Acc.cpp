@@ -1,10 +1,10 @@
 // Define a class to represent a bank account. Include the following members:
-// Data Member:
+//            Data Member:
 //-Name of the depositor
 //-Account Number
 //-Type of Account
 //-Balance amount in the account
-// Member Functions
+//          Member Functions
 //-To assign values
 //-To deposited an amount
 //-To withdraw an amount after checking balance
@@ -14,67 +14,49 @@
 
 using namespace std;
 
-class BankAccount
+class bank_account
 {
 public:
-    BankAccount()
-
-        BankAccount(string name, int accountNumber, string accountType, double balance)
+    bank_account(string name, int accountNo, string accountType, int balance)
     {
         this->name = name;
-        this->accountNumber = accountNumber;
+        this->accountNo = accountNo;
         this->accountType = accountType;
         this->balance = balance;
     }
 
-    void assignValues(string name, int accountNumber, string accountType, double balance)
+    void deposit(int amount)
     {
-        this->name = name;
-        this->accountNumber = accountNumber;
-        this->accountType = accountType;
-        this->balance = balance;
+        balance = balance + amount;
     }
 
-    void deposit(double amount)
+    void withdraw(int amount)
     {
-        balance += amount;
+        balance = balance - amount;
     }
 
-    void withdraw(double amount)
+    void display()
     {
-        if (amount <= balance)
-        {
-            balance -= amount;
-        }
-        else
-        {
-            cout << "Insufficient funds." << endl;
-        }
-    }
-
-    void displayDetails()
-    {
-        cout << "Name: " << name << endl;
-        cout << "Account Number: " << accountNumber << endl;
-        cout << "Account Type: " << accountType << endl;
-        cout << "Balance: " << balance << endl;
+        cout << "Name:" << name << endl;
+        cout << "account Number:" << accountNo << endl;
+        cout << "account Type:" << accountType << endl;
+        cout << "balance:" << balance << endl;
     }
 
 private:
     string name;
-    int accountNumber;
+    int accountNo;
     string accountType;
-    double balance;
+    int balance;
 };
 
 int main()
 {
-    BankAccount account;
+    bank_account account("Rachna", 9999, "Saving", 25000);
 
-    account.assignValues("John Doe", 12345, "Savings", 1000.0);
-    account.deposit(500.0);
-    account.withdraw(200.0);
-    account.displayDetails();
+    account.deposit(1000);
+    account.withdraw(2000);
+    account.display();
 
     return 0;
 }

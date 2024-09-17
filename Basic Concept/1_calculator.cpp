@@ -25,7 +25,8 @@ public:
 };
 int main()
 {
-    calculator cal;
+    calculator  cal;
+    //(class)   //(obj)
     int a, b;
     char op;
 
