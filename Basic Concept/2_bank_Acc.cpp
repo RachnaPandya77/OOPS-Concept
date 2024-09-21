@@ -17,6 +17,8 @@ using namespace std;
 class bank_account
 {
 public:
+
+    
     bank_account(string name, int accountNo, string accountType, int balance)
     {
         this->name = name;

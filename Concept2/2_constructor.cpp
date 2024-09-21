@@ -18,7 +18,7 @@ private:
     double num2;
 
 public:
-    calculate(double num1, double num2)
+    calculate(double num1, double num2) // parameterized constructor
     {
         this->num1 = num1;
         this->num2 = num2;

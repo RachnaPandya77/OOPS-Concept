@@ -47,6 +47,7 @@ int main()
     cin >> radius;
     cout << endl;
 
+    //class  //obj
     circle fullcircle(radius, area, circumference);
 
     cout << "Area of circle: " << fullcircle.circle_area() << endl;
