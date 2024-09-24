@@ -9,7 +9,7 @@ class Rectangle
 public:
     double area()
     {
-        return 0.0;
+        return 0;
     }
 };
 
@@ -35,7 +35,7 @@ int main()
     double area;
 
     rec r1(5, 3);
-    r1.area();
+    area = r1.area();
     cout << "Area of Rectangle: " << area << endl;
 
     return 0;
