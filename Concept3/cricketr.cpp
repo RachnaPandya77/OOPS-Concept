@@ -14,6 +14,7 @@ public:
     }
     void displaydata()
     {
+        cout << endl;
         cout << "Cricketer Name: Virat Kohli" << endl;
     }
 };
