@@ -12,7 +12,7 @@ private:
     double ac_balance;
 
 public:
-    BankAccount(int number)
+    BankAccount(int number) //constructor
     {
         ac_num = number;
         ac_balance = 0.0;
