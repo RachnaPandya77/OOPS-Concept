@@ -5,7 +5,7 @@ obtained in the test. The class result can inherit the details of the marks
 obtained in the test and roll number of students. (Multilevel Inheritance)*/
 
 // class student : rollno
-// class test : mark_2_sub
+// class test : mark_2_sub(student)
 // class result : totalmark(test,student)
 
 #include <iostream>

@@ -21,16 +21,16 @@ public:
     // member function
     void readdata()
     {
-        // cout << "Enter name: ";
-        // cin >> name;
-        // cout << "Enter age: ";
-        // cin >> age;
+        cout << "Enter name: ";
+        cin >> name;
+        cout << "Enter age: ";
+        cin >> age;
     }
 
     void writedata()
     {
-        // cout << "Name: " << name << endl;
-        // cout << "Age: " << age << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
     }
 };
 
@@ -47,13 +47,13 @@ public:
     void readdata()
     {
         person::readdata();
-        // cout << "Enter Percentage: ";
-        // cin >> percentage;
+        cout << "Enter Percentage: ";
+        cin >> percentage;
     }
     void writedata()
     {
         person::writedata();
-        // cout << "Percentage" << percentage << endl;
+        cout << "Percentage" << percentage << endl;
         ;
     }
 };
@@ -71,13 +71,13 @@ public:
     void readdata()
     {
         person::readdata();
-        // cout << "Enter Salary: ";
-        // cin >> salary;
+        cout << "Enter Salary: ";
+        cin >> salary;
     }
     void writedata()
     {
         person::writedata();
-        // cout << "salary" << salary << endl;
+        cout << "salary" << salary << endl;
     }
 };
 
