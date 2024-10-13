@@ -14,13 +14,13 @@ public:
     int add(int a, int b)
     {
         return a + b;
-        cout << "Additiom " << add(a, b) << endl;
+        cout << "Addition " << add(a, b) << endl;
     }
 
     double add(double a, double b)
     {
         return a + b;
-        cout << "Additiom " << add(a, b) << endl;
+        cout << "Addition " << add(a, b) << endl;
     }
 
     // Function overloading for substraction
@@ -65,12 +65,13 @@ public:
 
 int main()
 {
-    int a, b;
+    double a, b;
 
-    // for int function
+    cout << "Enter first number: ";
+    cin >> a;
 
-    cout << "Enter two number: ";
-    cin >> a >> b;
+    cout << "Enter second number";
+    cin >> b;
 
     calculator c1;
 
