@@ -20,7 +20,7 @@ public:
         matrix result(size);
         for (int i = 0; i < size; i++)
         {
-            result.array[i] + a.array[i];
+            result.array[i] = array[i] + a.array[i];
         }
         return result;
     }

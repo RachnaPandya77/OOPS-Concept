@@ -54,8 +54,7 @@ public:
     {
         person::writedata();
         cout << "Percentage" << percentage << endl;
-        ;
-    }
+        }
     void printInfo()
     {
         cout << "Student Information:" << endl;
