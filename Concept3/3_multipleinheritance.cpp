@@ -56,6 +56,13 @@ public:
         cout << "Percentage" << percentage << endl;
         ;
     }
+    void printInfo()
+    {
+        cout << "Student Information:" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Percentage: " << percentage << endl;
+    }
 };
 
 class teacher : public person
@@ -79,12 +86,22 @@ public:
         person::writedata();
         cout << "salary" << salary << endl;
     }
+    void printthis()
+    {
+        cout << endl;
+        cout << "Teacher Information:" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "salary: " << salary << endl;
+    }
 };
 
 int main()
 {
     student stu("Ruchi", 20, 90);
-    teacher t1("Suruchi", 22, 40000);
+    stu.printInfo();
+    teacher t1("Suruchi", 32, 40000);
+    t1.printthis();
 
     cout << endl;
     stu.readdata();
