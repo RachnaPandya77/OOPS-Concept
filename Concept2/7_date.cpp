@@ -5,68 +5,81 @@ set and get these variables, as well as to validate if the date is valid.*/
 #include <iostream>
 using namespace std;
 
-class date
+class Date
 {
 private:
-    int day;
-    int month;
-    int year;
+    int day, month, year;
 
 public:
-    date()
+    Date(int day = 1, int month = 1, int year = 1900)
     {
-        day = 1;
-        month = 1;
-        year = 2000;
+        setDay(day);
+        setMonth(month);
+        setYear(year);
     }
 
-    void setday(int d)
+    void setDay(int day)
     {
-        if (d >= 1 && d <= 31)
+        if (day >= 1 && day <= 31)
         {
-            day = d;
+            this->day = day;
         }
         else
         {
-            cout << "Not valid" << endl;
+            cout << "Invalid day: " << day << endl;
         }
     }
 
-    void setmonth(int m)
-    {
-        if (m >= 1 && m <= 12)
-        {
-            month = m;
-        }
-        else
-        {
-            cout << "Not valid" << endl;
-        }
-    }
-
-    void setyear(int y)
-    {
-        year = y;
-    }
-
-    int getday()
+    int getDay()
     {
         return day;
     }
 
-    int getMonth()
+    void setMonth(int month)
+    {
+        if (month >= 1 && month <= 12)
+        {
+            this->month = month;
+        }
+        else
+        {
+            cout << "Invalid month: " << month << endl;
+        }
+    }
+
+    int getMonth() const
     {
         return month;
     }
 
-    int getYear()
+    void setYear(int year)
+    {
+        if (year >= 1900)
+        {
+            this->year = year;
+        }
+        else
+        {
+            cout << "Invalid year: " << year << endl;
+        }
+    }
+
+    int getYear() const
     {
         return year;
+    }
+
+    void display()
+    {
+        cout << day << "/" << month << "/" << year << endl;
     }
 };
 
 int main()
 {
+    Date d1(02, 44, 1999);
+
+    d1.display();
 
     return 0;
 }
